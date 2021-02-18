@@ -1,0 +1,25 @@
+.about {
+  height: 30rem;
+  background-color: #383e56;
+  padding: 30px;
+  padding-bottom: 250px;
+}
+
+.card {
+  width: 800px;
+  object-fit: contain;
+}
+
+.card > img {
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+.work {
+  height: 500px;
+  background-color: #383e56;
+}
+
+.contact {
+  height: 500px;
+}
