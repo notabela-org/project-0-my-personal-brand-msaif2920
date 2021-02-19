@@ -5,12 +5,26 @@
   padding-bottom: 250px;
 }
 
+.flex__layout__projects {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.projects > h1 {
+  text-align: center;
+}
+
 .card {
-  width: 800px;
+  width: 600px;
   object-fit: contain;
+  border-radius: 10px;
 }
 
 .card > img {
+  width: 600px;
+  height: 300px;
   object-fit: contain;
   opacity: 0.5;
 }
