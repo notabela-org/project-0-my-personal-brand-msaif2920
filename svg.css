@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#right-wheel,
+#left-wheel {
+  animation: wheel 2s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#man-bike {
+  animation: bike 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#hat {
+  animation: hat 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+svg {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+}
+
+#cloud-1 {
+  animation: cloud-1 200s infinite linear;
+}
+
+#cloud-2 {
+  animation: cloud-2 105s infinite linear;
+}
+
+#cloud-3 {
+  animation: cloud-3 250s infinite linear;
+}
+
+#ballon {
+  animation: ballonwave 8s alternate infinite;
+}
+
+#sun {
+  animation: sunopac 10s infinite alternate;
+}
+
+@keyframes sunopac {
+  from {
+    opacity: 2;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes ballonwave {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}
+
+@keyframes ballon {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-70%);
+  }
+}
+
+@keyframes cloud-1 {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes cloud-2 {
+  from {
+    transform: translateX(-80%);
+  }
+  to {
+    transform: translateX(75%);
+  }
+}
+
+@keyframes cloud-3 {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(70%);
+  }
+}
+
+.svg {
+  position: relative;
+  overflow: hidden;
+}
+
+.intro {
+  padding: 20px;
+  border: solid;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  animation: borderintro 2s infinite alternate;
+}
+
+.intro > div {
+  text-align: center;
+}
+
+@keyframes borderintro {
+  from {
+    border-width: 0px black;
+  }
+  to {
+    border-width: 100px black;
+  }
+}
