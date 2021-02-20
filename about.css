@@ -1,0 +1,39 @@
+.about {
+  padding: 30px;
+  padding-bottom: 50px;
+}
+
+.about > h1 {
+  font-family: "Poppins";
+  color: black;
+  font-size: 50px;
+  animation: about_shift 3s forwards;
+  text-align: center;
+}
+
+.about > hr {
+  width: 10%;
+  background-color: black;
+  height: 5px;
+  margin-left: 45%;
+  animation: about_shift 4s forwards;
+}
+
+.about > h3 {
+  font-family: "Poppins";
+  color: black;
+  font-size: 1.5rem;
+  animation: about_shift 3s forwards;
+  text-align: center;
+  word-spacing: 2;
+  line-height: 50px;
+}
+
+/* @keyframes about_shift {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(45%);
+  }
+} */

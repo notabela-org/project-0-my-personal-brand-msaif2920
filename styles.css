@@ -1,10 +1,5 @@
-.about {
-  height: 30rem;
-  background-color: #383e56;
-  padding: 30px;
-  padding-bottom: 250px;
-  width: 100vw;
-  height: 50vh;
+body {
+  overflow-x: hidden;
 }
 
 .flex__layout__projects {
@@ -14,8 +9,18 @@
   margin-bottom: 50px;
 }
 
+.projects {
+  background-color: #00af91;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .projects > h1 {
   text-align: center;
+  font-family: "Poppins";
+  color: white;
+  font-size: 50px;
+  animation: about_shift 3s forwards;
 }
 
 .card {
@@ -32,8 +37,25 @@
 }
 
 .work {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   height: 500px;
-  background-color: #383e56;
+}
+
+.work > h1 {
+  font-family: "Poppins";
+  color: black;
+  font-size: 50px;
+  animation: about_shift 3s forwards;
+  text-align: center;
+}
+
+.work > div {
+  margin-left: 40px;
+}
+
+.work > div > h6 {
+  margin-left: 40px;
 }
 
 .contact {

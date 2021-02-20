@@ -1,0 +1,13 @@
+.navbar {
+  background-color: #00af91;
+}
+
+.navbar > li {
+  list-style-type: none;
+  display: flex;
+  margin-left: 20%;
+  color: white;
+  font-weight: bold;
+  font-family: raleway;
+  font-size: 120%;
+}
