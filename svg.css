@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -108,23 +110,7 @@ svg {
 }
 
 .intro {
-  padding: 20px;
-  border: solid;
   position: absolute;
   left: 40%;
   top: 30%;
-  animation: borderintro 2s infinite alternate;
-}
-
-.intro > div {
-  text-align: center;
-}
-
-@keyframes borderintro {
-  from {
-    border-width: 0px black;
-  }
-  to {
-    border-width: 100px black;
-  }
 }
