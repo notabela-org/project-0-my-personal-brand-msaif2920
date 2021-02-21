@@ -1,10 +1,8 @@
 .contact {
   background: #525252;
-  height: 200vh;
+  height: fit-content;
   position: relative;
-}
-
-.contact > svg {
+  height: 90vh;
 }
 
 .contact__details {
@@ -49,8 +47,11 @@ textarea {
 }
 
 .form__button {
+  height: 40%;
   width: 40%;
   margin-left: 30%;
+  line-height: 50px;
+  font-size: 1.3rem;
 }
 
 .form__button:hover {
@@ -67,7 +68,7 @@ textarea {
 }
 
 .form__textArea {
-  margin-bottom: 0px;
+  margin-bottom: 40px;
 }
 
 .contact__success {
@@ -77,4 +78,16 @@ textarea {
   margin-top: 0px;
   color: white;
   display: none;
+}
+
+@media only screen and (max-height: 600px) {
+  .form-data {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .contact {
+    height: 120vh;
+  }
 }

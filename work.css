@@ -23,10 +23,6 @@ h5 {
   font-family: "poppins";
 }
 
-.contact {
-  height: 120vh;
-}
-
 .work__respons {
   display: flex;
   flex-wrap: wrap;
