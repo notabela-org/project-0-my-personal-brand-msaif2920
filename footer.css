@@ -10,8 +10,17 @@ footer {
   font-size: 2rem;
 }
 
-.icons > i {
+.icons > a {
+  color: green;
+}
+
+.icons > a:visited {
+  color: green;
+}
+
+.icons > a > i {
   margin: 20px;
+  cursor: pointer;
 }
 
 footer > p {

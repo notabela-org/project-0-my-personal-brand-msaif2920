@@ -12,11 +12,11 @@
 }
 
 .about > hr {
-  width: 10%;
-  background-color: black;
-  height: 5px;
-  margin-left: 45%;
-  animation: about_shift 4s forwards;
+  display: block;
+  width: 120px;
+  margin: auto;
+  opacity: 0.7;
+  margin-bottom: 60px;
 }
 
 .about > h3 {
@@ -30,7 +30,7 @@
 }
 
 .profile__svg {
-  width: 20%;
+  width: 300px;
 }
 
 .about__divide {
@@ -38,8 +38,24 @@
   justify-content: space-around;
 }
 
+.about__info {
+  flex: 0.5;
+  text-align: center;
+  margin: auto;
+}
+.about__info > p {
+  margin: 0 20%;
+  text-align: center;
+}
+
 .skills {
   flex: 0.5;
+}
+
+.skills > h6 {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
 }
 
 .skills__list {
@@ -57,11 +73,16 @@
   margin-left: 20px;
   margin-top: 20px;
   font-family: "poppins";
+  font-weight: 600;
+}
+
+.skills__list > li:hover {
+  font-size: 20px;
 }
 
 /* @keyframes about_shift {
   from {
-    transform: translateX(100%);
+ho    transform: translateX(100%);
   }
   to {
     transform: translateX(45%);

@@ -2,36 +2,11 @@ body {
   overflow-x: hidden;
 }
 
-.flex__layout__projects {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 50px;
-  margin-bottom: 50px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.projects {
-  background-color: #00af91;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.projects > h1 {
-  text-align: center;
-  font-family: "Poppins";
-  color: white;
-  font-size: 50px;
-  animation: about_shift 3s forwards;
-}
-
-.card {
-  width: 600px;
-  object-fit: contain;
-  border-radius: 10px;
-}
-
-.card > img {
-  width: 600px;
-  height: 300px;
-  object-fit: contain;
-  opacity: 0.5;
+a:hover {
+  color: #fb743e;
 }

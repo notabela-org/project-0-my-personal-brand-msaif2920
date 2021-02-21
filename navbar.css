@@ -1,14 +1,16 @@
 .navbar {
-  background-color: #00af91;
+  background-color: #323232;
   position: sticky;
 }
 
 .navbar > li {
   list-style-type: none;
   display: flex;
-  margin-left: 20%;
+  margin-left: 10%;
+  margin-right: 8px;
   color: white;
   font-weight: bold;
   font-family: raleway;
   font-size: 120%;
+  cursor: pointer;
 }

@@ -10,6 +10,7 @@
   font-size: 50px;
   animation: about_shift 3s forwards;
   text-align: center;
+  margin-top: 60px;
 }
 
 .work > div {
@@ -66,4 +67,12 @@ h5 {
 
 .tech__stack__icon:hover {
   width: 300px;
+}
+
+.work__experince__line {
+  display: block;
+  width: 250px;
+  margin: auto;
+  opacity: 0.7;
+  margin-bottom: 60px;
 }

@@ -13,21 +13,21 @@
     <link rel="stylesheet" href="intro.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="work.css">
    
+
+</script>
+
     <title>Mohammad Saif</title>
 </head>
-<header>
-
-      
-</header>
 <body>
 
     <!-- SVG Background -->
-
-    <div class="svg">
+<section id="home">
+    <div  class="svg">
         <div class="intro">
             <div class="container">
         <div class="box">
@@ -121,21 +121,22 @@
             </defs>
             </svg>    
     </div>
-
-    <div class="navbar">
+</section>
+    <div id="navbar" class="navbar">
         <li>
-            <ul>Home</ul>
-            <ul>About</ul>
-            <ul>Projects</ul>
-            <ul>Contact Me</ul>
+            <a href="#home"><ul>Home</ul></a>
+            <a href="#about"><ul>About</ul></a>
+            <a href="#projects"><ul>Projects</ul></a>
+            <a href="#work"><ul>Work Experience</ul></a>
+            <a href="#contact"><ul>Contact</ul></a>
         </li>
-
     </div>
-
+<section id="about">
         <div class="about">
             <h1>About</h1>
             <hr>
             <div class="about__divide">
+                <div class="about__info">
                 <svg class="profile__svg" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                       <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
@@ -145,6 +146,10 @@
                     <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
                   </svg>
 
+                  <p>Currently a senior majoring in Computer Science. I am passionate about coding for any platform. 
+                      I love software engineering as it has a wide range of opprtunities for me to explore my passion
+                  </p>   
+                </div>
                   <div class="skills">
                       <h6>Skills</h6>
                            <ul class="skills__list">
@@ -165,6 +170,7 @@
                             <li>Firebase</li>
                             <li>Microsoft SQL Server</li>
                             <li>SQLite</li>
+                            <li>Git</li>
                             <li>Tomcat</li>
                             <li>Visual Studio Code</li>
                             <li>Eclipse</li>
@@ -175,9 +181,15 @@
 
             </div>
         </div>
+    </section>
 
-        <div class="projects">
-            <h1>PROJECTS</h1>
+    <section id="projects">
+        <div  class="projects">
+            <div>
+                <h1 class="projects__header">PROJECTS</h1>
+            <hr class="project__line">
+            </div>
+            
             <div class="flex__layout__projects">
             <div class="card bg-dark text-white">
                 <img src="./static/covid_app.JPG"class="card-img" alt="...">
@@ -216,8 +228,12 @@
               </div>
               </div>
         </div>
+</section>
+
+<section id="work">
         <div class="work">
             <h1>Work Experience</h1>
+            <hr class="work__experince__line">
           
           <h4>Numeraxial LLC</h4>
           <h5>Software Engineer Intern</h5>
@@ -238,16 +254,21 @@
             <img src="static/node.png" class="tech__stack__icon">
             <img src="static/git.png.crdownload" class="tech__stack__icon">
           </div>
-          
-
         </div>
+    </section>
+
+    <section id="contact">
         <div class="contact">
             <div class="contact__details">
                 <h1>Contact Me</h1>
+                <hr class="contact__line">
               <form class="form__data">
                     <input type = "text" name="name" placeholder="Name" class="form__input" required>
                     <input type = "text" name="email" placeholder="Email" class="form__input" required>
                     <textarea rows="7" cols="70" name="msg" placeholder="Your Message" class="form__textArea"></textarea>
+                    <div>
+                        <p id="success" class="contact__success">Message Sent Sucessfully</p>
+                    </div>
                     <input type="submit" placeholder="Submit" class="form__button">
               </form>
             </div>
@@ -264,14 +285,16 @@
             <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>   
           </svg>
         </div> 
+    </section>
 </body>
 
 <footer>
     <div class="icons">
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-github"></i>
-        <i class="far fa-envelope"></i>
+        <a href="https://www.linkedin.com/in/msaifxyz/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100022930177513"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://github.com/msaif2920"> <i class="fab fa-github"></i></a>
+        <a href="mailto: msaif2920@gmail.com"><i class="far fa-envelope"></i></a>
+        
     </div>
 
     <p>MOHAMMAD SAIF <span>&copy2020</span></p>
