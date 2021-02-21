@@ -29,6 +29,36 @@
   line-height: 50px;
 }
 
+.profile__svg {
+  width: 20%;
+}
+
+.about__divide {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills {
+  flex: 0.5;
+}
+
+.skills__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__list > li {
+  margin: 5px;
+  background: #f0ece2;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 17px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: "poppins";
+}
+
 /* @keyframes about_shift {
   from {
     transform: translateX(100%);

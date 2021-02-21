@@ -35,29 +35,3 @@ body {
   object-fit: contain;
   opacity: 0.5;
 }
-
-.work {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  height: 500px;
-}
-
-.work > h1 {
-  font-family: "Poppins";
-  color: black;
-  font-size: 50px;
-  animation: about_shift 3s forwards;
-  text-align: center;
-}
-
-.work > div {
-  margin-left: 40px;
-}
-
-.work > div > h6 {
-  margin-left: 40px;
-}
-
-.contact {
-  height: 500px;
-}

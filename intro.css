@@ -78,7 +78,7 @@ h1 > span {
   display: flex;
 }
 
-p {
+.role > p {
   animation: secFadeIn 2s forwards;
   animation-delay: 3.2s;
   opacity: 0;

@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="svg.css">
     <link rel="stylesheet" href="intro.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="work.css">
    
     <title>Mohammad Saif</title>
 </head>
@@ -40,7 +45,7 @@
         </div>
             </div>
         </div>
-        <svg width="2000" height="1126" viewBox="0 0 2000 1126" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="2000" height="1126" viewBox="0 0 2000 1126" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg__animation">
             <g id="undraw_air_support_wy1q 1" clip-path="url(#clip0)">
             <rect width="2000" height="1126" fill="#87CEEB"/>
             <g id="cloud-3">
@@ -130,14 +135,45 @@
         <div class="about">
             <h1>About</h1>
             <hr>
+            <div class="about__divide">
+                <svg class="profile__svg" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
+                        <image xlink:href="./static/profile.jpg" x="-25" width="150" height="100" />
+                      </pattern>
+                    </defs>
+                    <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
+                  </svg>
 
-            <h3>
-                Striving to improve as a problem solver is the reason why I became a software engineer. Aiming higher and thinking bigger
-                is my moto. I am currently a senior majoring in Computer Science at City College Of New York and expected to graduate at
-                May 2021. I have experince working on startup comapny where I built software solutions in strict deadlines. Currently seeking 
-                a software Enginner position where my contribution would help solve large scale problems and help me grow as a problem solver 
-                and transition into a better and smarter enginner. 
-            </h3>
+                  <div class="skills">
+                      <h6>Skills</h6>
+                           <ul class="skills__list">
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                            <li>Dart</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>MongoDB.js</li>
+                            <li>Express.js</li>
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>Spring</li>
+                            <li>Android Development</li>
+                            <li>Flutter</li>
+                            <li>Firebase</li>
+                            <li>Microsoft SQL Server</li>
+                            <li>SQLite</li>
+                            <li>Tomcat</li>
+                            <li>Visual Studio Code</li>
+                            <li>Eclipse</li>
+                            <li>Intellij Idea</li>
+                            <li>Android Studio</li>
+                        </ul>
+                  </div>    
+
+            </div>
         </div>
 
         <div class="projects">
@@ -182,30 +218,64 @@
         </div>
         <div class="work">
             <h1>Work Experience</h1>
-           <div> 
+          
           <h4>Numeraxial LLC</h4>
           <h5>Software Engineer Intern</h5>
-          <h6>Responsibilities</h6>
-          <h6>
-            ●	Designed front-end of stock screener using React framework with additional dependencies.<br>
-            ●	Extracted large stock data using API’s for over 48,000 companies.<br>
-            ●	Designed a MongoDB database to store large data.<br>
-            ●	Wrote queries for different combinations of search patterns.<br>
-            ●	Developed REST API’s to perform CRUD operation on the database.<br>
-            ●	Integrated charts to visualize data for certain periods.<br>
-          </h6>
-        </div>
-       
+          <div class="work__respons">
+            <h6 class="work_respons_details">Designed front-end of stock screener using React framework with additional dependencies  </h6>
+            <h6 class="work_respons_details">Extracted large stock data using API’s for over 48,000 companies.  </h6>
+            <h6 class="work_respons_details">Designed a MongoDB database to store large data.  </h6>
+            <h6 class="work_respons_details">Wrote queries for different combinations of search patterns. </h6>
+            <h6 class="work_respons_details">Developed REST API’s to perform CRUD operation on the database.  </h6>
+            <h6 class="work_respons_details">Integrated charts to visualize data for certain periods.  </h6>
+          </div>
 
+          <h4 class="tech__stack__text">Tech Stack Used</h4>
+          <div class="tech__stack">
+            <img src="static/mongoDB.jpg" class="tech__stack__icon">
+            <img src="static/express.png" class="tech__stack__icon">
+            <img src="static/react.png" class="tech__stack__icon">
+            <img src="static/node.png" class="tech__stack__icon">
+            <img src="static/git.png.crdownload" class="tech__stack__icon">
+          </div>
+          
 
         </div>
         <div class="contact">
-            Email Info:
-            Linkedin:
+            <div class="contact__details">
+                <h1>Contact Me</h1>
+              <form class="form__data">
+                    <input type = "text" name="name" placeholder="Name" class="form__input" required>
+                    <input type = "text" name="email" placeholder="Email" class="form__input" required>
+                    <textarea rows="7" cols="70" name="msg" placeholder="Your Message" class="form__textArea"></textarea>
+                    <input type="submit" placeholder="Submit" class="form__button">
+              </form>
+            </div>
             
-        </div>
-
-    
-     
+            <svg
+            preserveAspectRatio="none"
+            viewBox="0 0 100 104"
+            height="75"
+            width="100%"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            class="svgcolor-light"
+          >
+            <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>   
+          </svg>
+        </div> 
 </body>
+
+<footer>
+    <div class="icons">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-github"></i>
+        <i class="far fa-envelope"></i>
+    </div>
+
+    <p>MOHAMMAD SAIF <span>&copy2020</span></p>
+    
+</footer>
+
 </html>
